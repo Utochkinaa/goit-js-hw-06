@@ -1,6 +1,8 @@
-const inputChange = document.querySelector('input#font-size-control')
-const abracadabra = document.querySelector('span#text')
+const fontSize = document.querySelector("#font-size-control");
+const valueText = document.querySelector("#text");
 
-inputChange.addEventListener('change', e => {
-    abracadabra.style.fontSize = `${e.target.value }px`
-})
+fontSize.addEventListener("input", sizeText);
+function sizeText(event) {
+  valueText.style.fontSize = `${event.target.value}px`;
+}
+
